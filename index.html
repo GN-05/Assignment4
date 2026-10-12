@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <main>
+    <form id="search-form">
+      <input id="city-input" type="text" placeholder="Enter a city, e.g. Beirut" required>
+      <button id="search-btn" type="submit">Search</button>
+    </form>
+
+    <div class="status-box">
+      <span id="spinner" class="spinner" hidden></span>
+      <p id="status" data-state="idle"></p>
+      <button id="retry-btn" type="button" hidden>Retry</button>
+    </div>
+
+    <section id="results" hidden>
+      <div class="card">
+        <h2 id="city-name"></h2>
+        <p id="weather-icon" class="icon"></p>
+        <p id="temperature" class="temp"></p>
+        <p id="conditions"></p>
+        <div class="details">
+          <p>Feels like: <span id="feels-like"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>Wind: <span id="wind"></span></p>
+        </div>
+      </div>
+
+      <h3>3-day forecast</h3>
+      <ul id="forecast"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Assignment 4 - Data from <a href="https://open-meteo.com/">Open-Meteo</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

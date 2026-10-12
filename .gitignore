@@ -1,0 +1,6 @@
+# API keys
+.env
+
+# Editor / OS junk
+.DS_Store
+.vscode/
